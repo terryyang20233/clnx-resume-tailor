@@ -1,0 +1,99 @@
+#clnx-resume-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483646;
+  width: 340px;
+  max-height: min(70vh, 560px);
+  overflow: auto;
+  background: #102a43;
+  color: #f0f4f8;
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  padding: 12px 12px 10px;
+}
+
+#clnx-resume-panel h1 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#clnx-resume-panel .muted {
+  color: #bcccdc;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+#clnx-resume-panel input[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 8px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: #243b53;
+  color: #f0f4f8;
+}
+
+#clnx-resume-panel button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-weight: 600;
+  background: #2cb1bc;
+  color: #102a43;
+}
+
+#clnx-resume-panel button.secondary {
+  background: #334e68;
+  color: #f0f4f8;
+}
+
+#clnx-resume-panel .row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+#clnx-resume-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 280px;
+  overflow: auto;
+}
+
+#clnx-resume-panel li {
+  padding: 6px 0;
+  border-top: 1px solid #334e68;
+}
+
+#clnx-resume-panel li button {
+  margin-top: 4px;
+}
+
+#clnx-resume-panel .title {
+  font-weight: 600;
+}
+
+#clnx-resume-panel .meta {
+  color: #9fb3c8;
+  font-size: 11px;
+}
+
+#clnx-resume-panel .status {
+  margin-top: 8px;
+  white-space: pre-wrap;
+  color: #d9e2ec;
+}
+
+#clnx-resume-panel .ok {
+  color: #c6f6d5;
+}
+
+#clnx-resume-panel .err {
+  color: #fed7d7;
+}

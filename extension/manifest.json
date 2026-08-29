@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "CLNx Resume Tailor",
+  "version": "0.1.0",
+  "description": "Send a CLNx job posting to a local one-page resume tailor.",
+  "permissions": [],
+  "host_permissions": [
+    "https://clnx.utoronto.ca/*",
+    "http://127.0.0.1:18765/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://clnx.utoronto.ca/*"],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "CLNx Resume Tailor"
+  }
+}

@@ -1,0 +1,9 @@
+applications/*
+!applications/.gitkeep
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+.resume_server.log
+.DS_Store
