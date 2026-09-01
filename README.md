@@ -1,6 +1,10 @@
 # CLNx Resume Tailor
 
-Chrome extension plus a local Python server that turns a University of Toronto [CLNx](https://clnx.utoronto.ca) work-study posting into a one-page PDF resume.
+**English** | [中文](README.zh-CN.md)
+
+Chrome extension plus a local Python server that turns a University of Toronto [CLNx](https://clnx.utoronto.ca) work-study posting into a tailored one-page PDF resume.
+
+This is an **unofficial personal tool**. It is not affiliated with, endorsed by, or supported by the University of Toronto or CLNx.
 
 ```
 CLNx posting  →  Chrome extension  →  127.0.0.1:18765  →  applications/<id>-<slug>/
@@ -9,14 +13,14 @@ CLNx posting  →  Chrome extension  →  127.0.0.1:18765  →  applications/<id
                                                               selection.json
 ```
 
-The selector is keyword overlap against a local bullet bank (`resume_data.py`), then `pdflatex` with greedy shrinking until the PDF is one page.
+The selector ranks bullets from a local bank (`resume_data.py`) by keyword overlap with the posting, then compiles with `pdflatex` and greedily drops the least relevant blocks until the PDF is one page.
 
-This repo is the **tool**. Put your own contact info and bullets in `resume_data.py`. Do not commit real applications, transcripts, or a full personal resume dump if the repo is public.
+The committed `resume_data.py` is a **fictional sample** (Alex Rivera / example.com). Put your own heading and bullets there. Do not commit real applications, transcripts, or a full personal dump if the repo is public.
 
 ## Requirements
 
 - Python 3.10+
-- [MacTeX](https://www.tug.org/mactex/) or another TeX distribution with `pdflatex` (and optionally `pdfinfo`)
+- [MacTeX](https://www.tug.org/mactex/) or [TeX Live](https://tug.org/texlive/) with `pdflatex` (and optionally `pdfinfo`)
 - Chrome (unpacked extension)
 - A CLNx login (the extension only runs on `https://clnx.utoronto.ca/*`)
 
@@ -41,22 +45,25 @@ From the listing table (`#postingsTable`) the panel only helps you open a postin
 python3 tailor.py examples/sample-job.json
 ```
 
+`examples/sample-job.json` is a made-up posting, not a real CLNx job.
+
 ## What gets written
 
 Each run creates `applications/<posting-id>-<title-slug>/`:
 
 | File | Purpose |
 |------|---------|
-| `job.json` | Raw fields scraped from CLNx |
+| `job.json` | Raw fields scraped from the posting page |
 | `job.md` | Same posting as markdown |
 | `resume.tex` / `resume.pdf` | Tailored one-pager |
 | `selection.json` | Which bank items were kept and why |
 
-Generated PDFs are gitignored.
+`applications/` is gitignored (except `.gitkeep`). Generated PDFs stay on your machine unless you add them yourself.
 
 ## Privacy
 
-- The HTTP server listens on `127.0.0.1` only. Job text never leaves your machine unless you push `applications/`.
+- The HTTP server listens on `127.0.0.1` only. Job text is not sent to any remote API.
+- CORS is limited to `https://clnx.utoronto.ca` (and Chrome extension origins). Arbitrary websites cannot call the local server from the browser.
 - Keep `applications/` and a filled-in `resume_data.py` out of public remotes if they contain personal data.
 
 ## License

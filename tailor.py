@@ -466,9 +466,9 @@ def tailor(job: dict) -> dict:
     return {
         "ok": True,
         "pages": pages,
-        "folder": str(folder),
-        "pdf": str(pdf_path) if pdf_path.exists() else None,
-        "tex": str(tex_path),
+        "folder": str(folder.relative_to(ROOT)),
+        "pdf": str(pdf_path.relative_to(ROOT)) if pdf_path.exists() else None,
+        "tex": str(tex_path.relative_to(ROOT)),
         "title": title,
         "id": pid,
         "kept": json.loads((folder / "selection.json").read_text(encoding="utf-8"))["kept"],

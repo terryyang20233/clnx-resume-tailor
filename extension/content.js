@@ -44,9 +44,8 @@
       const v = cells[1].innerText.trim();
       if (k && v) fields[k] = v;
     });
-    const heading = (
-      document.querySelector("h1, h2") || { innerText: "" }
-    ).innerText.trim();
+    const headingEl = root.querySelector("h1, h2");
+    const heading = (headingEl && headingEl.innerText.trim()) || "";
     return {
       heading,
       url: location.href,
@@ -162,7 +161,7 @@
       const r = await send("health");
       setStatus(
         panel,
-        r.ok ? "Server OK: " + (r.root || "") : "Server down. Run python3 server.py",
+        r.ok ? "Server OK" : "Server down. Run python3 server.py",
         r.ok ? "ok" : "err"
       );
     });

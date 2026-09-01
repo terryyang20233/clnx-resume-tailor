@@ -1,7 +1,9 @@
-"""Replace this file with your own resume bank.
+"""Fictional sample resume bank. Replace with your own data before using.
 
-Each bullet is a candidate line. The tailor scores bullets against a CLNx
-posting and keeps a one-page subset. LaTeX is allowed in strings.
+Every name, school, job, and project below is invented. Do not commit real
+contact info, transcripts, or a full personal dump if this repository is
+public. Each bullet is a candidate line: the tailor scores them against a
+CLNx posting and keeps a one-page subset. LaTeX is allowed in strings.
 """
 
 HEADING = {
@@ -18,13 +20,13 @@ HEADING = {
 
 EDUCATION = [
     {
-        "id": "uoft",
-        "school": r"University of Toronto",
-        "location": r"Toronto, ON",
-        "degree": r"B.A.Sc.\ in Engineering Science",
-        "dates": r"Sept. 2026 -- Present",
+        "id": "northbridge",
+        "school": r"Northbridge Polytechnic",
+        "location": r"Harbor City",
+        "degree": r"B.Sc.\ in Applied Computing",
+        "dates": r"Sept. 2024 -- Present",
         "bullets": [
-            r"Dean's List; coursework in robotics, signals, and computing",
+            r"Coursework in databases, technical writing, and introductory statistics",
         ],
         "always": True,
     },
@@ -32,47 +34,47 @@ EDUCATION = [
 
 EXPERIENCE = [
     {
-        "id": "lab",
-        "title": r"Research Assistant",
+        "id": "archives",
+        "title": r"Student Records Aide",
         "dates": r"May 2025 -- Aug. 2026",
-        "org": r"Example Robotics Lab",
-        "location": r"Toronto, ON",
+        "org": r"Northbridge Campus Archives",
+        "location": r"Harbor City",
         "roles": [
             {
-                "id": "vision",
-                "title": r"Perception",
+                "id": "catalog",
+                "title": r"Cataloguing",
                 "dates": r"May 2026 -- Aug. 2026",
                 "bullets": [
-                    r"Trained a YOLO detector for thin obstacles in aerial imagery and evaluated transfer to onboard video",
-                    r"Labeled 200+ images and added edge-aware augmentation for blur and low light",
-                    r"Wrote ROS~2 nodes to publish detections at 20\,Hz for a downstream planner",
+                    r"Entered 400+ folder labels into a shared spreadsheet and flagged duplicate accession numbers",
+                    r"Wrote short scope notes so student workers could find boxes without opening every lid",
+                    r"Checked out reading-room materials and logged returns the same afternoon",
                 ],
             },
             {
-                "id": "sim",
-                "title": r"Simulation",
+                "id": "digitize",
+                "title": r"Digitization",
                 "dates": r"May 2025 -- Aug. 2025",
                 "bullets": [
-                    r"Built a Gazebo software-in-the-loop stack sharing one capture core with the live graph",
-                    r"Unit-tested intercept timing under $v_{\max}$ and $a_{\max}$ constraints",
+                    r"Scanned faded flyers at 300\,dpi and exported PDFs into a dated folder tree",
+                    r"Ran a weekly checksum script so the backup disk matched the working copy",
                 ],
             },
         ],
     },
     {
-        "id": "tutor",
-        "title": r"Instructor",
-        "dates": r"July 2025 -- July 2026",
-        "org": r"Example Academy",
-        "location": r"Toronto, ON",
+        "id": "cafe",
+        "title": r"Shift Lead",
+        "dates": r"Sept. 2024 -- Apr. 2025",
+        "org": r"Maple \& Bean Cafe",
+        "location": r"Harbor City",
         "roles": [
             {
-                "id": "tutor-main",
+                "id": "cafe-main",
                 "title": None,
                 "dates": None,
                 "bullets": [
-                    r"Led weekly small-group sessions of about 10 students through homework and contest strategies",
-                    r"Ran question-driven recitations and assigned targeted practice on weak topics",
+                    r"Opened three weekday mornings: counted the till, restocked cups, and posted the sandwich board",
+                    r"Trained two new baristas on the register and the closing checklist",
                 ],
             }
         ],
@@ -81,71 +83,71 @@ EXPERIENCE = [
 
 PROJECTS = [
     {
-        "id": "patrol",
-        "heading": r"\textbf{Patrol Robot} $|$ \emph{YOLO, SLAM, LiDAR}",
-        "dates": r"June 2024 -- Apr. 2025",
+        "id": "lostfound",
+        "heading": r"\textbf{Campus Lost-and-Found} $|$ \emph{HTML, SQLite}",
+        "dates": r"Jan. 2025 -- Apr. 2025",
         "bullets": [
-            r"Built a patrol robot that detects fire in real time and alerts an operator",
-            r"Used vision--LiDAR SLAM for mapping, navigation, and dynamic obstacle avoidance",
+            r"Built a tiny web form so staff can log umbrellas, cards, and water bottles by building",
+            r"Added a search page that filters by date and location without a login",
         ],
     },
     {
-        "id": "site",
-        "heading": r"\textbf{Personal Site} $|$ \emph{Astro, TypeScript}",
-        "dates": r"June 2026 -- Present",
+        "id": "recipes",
+        "heading": r"\textbf{Recipe Scaler} $|$ \emph{Python}",
+        "dates": r"June 2024 -- Aug. 2024",
         "bullets": [
-            r"Notes site on robotics and computer vision, deployed as a static app",
+            r"Scaled ingredient lists for 2--12 servings and printed a grocery checklist",
         ],
     },
 ]
 
 LEADERSHIP = [
     {
-        "id": "club",
-        "title": r"President, Robotics Club",
-        "dates": r"Sept. 2024 -- June 2026",
-        "org": r"Example Secondary School",
-        "location": r"Toronto, ON",
+        "id": "games",
+        "title": r"Treasurer, Board Game Society",
+        "dates": r"Sept. 2024 -- Present",
+        "org": r"Northbridge Polytechnic",
+        "location": r"Harbor City",
         "bullets": [
-            r"Coordinated build seasons, outreach, and match-day software reliability",
+            r"Tracked dues in a shared ledger and ordered replacement cards twice a term",
         ],
     },
 ]
 
 VOLUNTEERING = [
     {
-        "id": "tutor-vol",
-        "title": r"Tutor",
-        "dates": r"Nov. 2024 -- June 2026",
-        "org": r"Community Program",
-        "location": r"Toronto, ON",
+        "id": "bookstore",
+        "title": r"Weekend Shelf Volunteer",
+        "dates": r"Oct. 2024 -- June 2025",
+        "org": r"Harbor City Community Bookstore",
+        "location": r"Harbor City",
         "bullets": [
-            r"Tutored newcomers in English conversation, 3+ hours per week",
+            r"Shelved donations and printed price stickers, 3 hours most Saturdays",
         ],
     },
 ]
 
 AWARDS = [
     {
-        "id": "dean",
-        "heading": r"\textbf{Dean's List} $|$ \emph{University of Toronto}",
-        "dates": r"2026",
+        "id": "writing",
+        "heading": r"\textbf{First-Year Writing Prize} $|$ \emph{Northbridge Polytechnic}",
+        "dates": r"2025",
     },
 ]
 
 CERTS = [
     {
-        "id": "ml",
-        "heading": r"\textbf{Machine Learning Specialization} $|$ \emph{DeepLearning.AI}",
-        "dates": r"June 2026",
+        "id": "sheets",
+        "heading": r"\textbf{Spreadsheet Fundamentals} $|$ \emph{Contoso Learn}",
+        "dates": r"Jan. 2025",
     },
 ]
 
 SKILL_LINES = [
-    {"id": "prog", "label": r"Programming", "value": r"Python, C++, Java, MATLAB, \LaTeX"},
-    {"id": "ai", "label": r"AI \& Robotics", "value": r"PyTorch, YOLO, OpenCV, ROS~2, Gazebo"},
+    {"id": "prog", "label": r"Programming", "value": r"Python, SQL, HTML, \LaTeX"},
+    {"id": "data", "label": r"Data \& Records", "value": r"Excel, SQLite, CSV cleanup"},
     {"id": "tools", "label": r"Developer Tools", "value": r"Git, VS Code"},
-    {"id": "lang", "label": r"Spoken Languages", "value": r"English; French"},
+    {"id": "lang", "label": r"Spoken Languages", "value": r"English; Spanish"},
 ]
 
-INTERESTS = r"Hiking; Tennis; Aerial photography"
+INTERESTS = r"Cooking; Crossword puzzles; Community radio"

@@ -5,5 +5,10 @@ __pycache__/
 *.aux
 *.log
 *.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
 .resume_server.log
+.env
+.env.*
 .DS_Store

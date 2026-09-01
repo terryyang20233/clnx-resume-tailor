@@ -1,17 +1,17 @@
 {
-  "heading": "264691 - Example Lab Assistant",
+  "heading": "264691 - Campus Archives Assistant",
   "url": "https://clnx.utoronto.ca/myAccount/jobs/work-study/wsjobs.htm",
   "fields": {
     "Work Study Stream": "Work Experience Stream",
-    "Position Type": "Lab Coordination and Assistance",
-    "Campus Location": "St. George",
-    "Work Study Position Title": "Example Lab Assistant",
-    "Position Description": "Assist with daily care of a research colony, including preparing feed and performing health checks. Use tracking software to monitor and record data. Prepare laboratory buffer solutions. Work independently, demonstrate initiative, and communicate clearly with the team.",
-    "Qualifications": "Hard-working students interested in animal health or lab operations. Previous wet-lab or animal-care experience is an asset.",
-    "Department / Unit Overview": "A biomedical research facility. Work-study students interact with undergraduate, graduate, and postdoctoral researchers.",
-    "Skills": "Communication Organization and Records Management Professionalism Teamwork",
-    "Organization": "University of Toronto",
-    "Division": "Faculty of Medicine",
-    "Department / Unit": "Molecular Genetics"
+    "Position Type": "Records and Office Assistance",
+    "Campus Location": "Example Campus",
+    "Work Study Position Title": "Campus Archives Assistant",
+    "Position Description": "Help staff catalogue boxes, enter folder labels into a tracking spreadsheet, and check materials in and out of a reading room. Scan paper flyers, keep dated digital copies organized, and flag duplicate accession numbers. Work independently, keep accurate records, and communicate clearly with the team.",
+    "Qualifications": "Students interested in libraries, records, or campus history. Comfort with spreadsheets and careful data entry is an asset.",
+    "Department / Unit Overview": "A fictional campus archives used only as a sample posting. Work-study students would interact with librarians and other student workers.",
+    "Skills": "Communication Organization and Records Management Professionalism Teamwork Spreadsheets",
+    "Organization": "Example University",
+    "Division": "Campus Libraries",
+    "Department / Unit": "University Archives"
   }
 }
